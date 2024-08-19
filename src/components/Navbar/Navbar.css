@@ -1,0 +1,9 @@
+.NavbarSpace {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0px;
+  background-color: black;
+  display: flex;
+  border: 1px solid red;
+}
