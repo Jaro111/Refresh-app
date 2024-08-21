@@ -1,9 +1,29 @@
 .NavbarSpace {
-  width: 100%;
+  width: 95%;
   height: 40px;
   position: fixed;
-  top: 0px;
-  background-color: black;
+  top: 15px;
   display: flex;
-  border: 1px solid red;
+  border-bottom: 1px solid grey;
+  font-size: 25px;
+}
+
+.navLinksContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 500px;
+  height: 100%;
+}
+
+.navbarLogo {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.navLink {
+  text-decoration: none;
+  color: rgb(199, 165, 171);
 }
