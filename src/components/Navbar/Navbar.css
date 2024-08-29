@@ -1,11 +1,11 @@
 .NavbarSpace {
   width: 95%;
   height: 40px;
-  position: fixed;
-  top: 15px;
-  display: flex;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(134, 73, 85);
   font-size: 25px;
+  position: fixed;
+  top: 0;
+  z-index: 900;
 }
 
 .navLinksContainer {
@@ -25,5 +25,5 @@
 }
 .navLink {
   text-decoration: none;
-  color: rgb(199, 165, 171);
+  color: rgb(134, 73, 85);
 }
