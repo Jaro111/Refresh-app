@@ -1,10 +1,6 @@
 import React from "react";
-import "./Gallery.css";
+import { GalleryPageCentre } from "../components/GalleryPageCentre/GalleryPageCentre";
 
 export const Gallery = () => {
-  return (
-    <>
-      <p>Gallery</p>
-    </>
-  );
+  return <GalleryPageCentre />;
 };

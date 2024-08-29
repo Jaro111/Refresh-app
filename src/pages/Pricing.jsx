@@ -1,14 +1,26 @@
-import React from "react";
-import "./Pricing.css";
+import React, { useEffect, useState } from "react";
+import { pricing } from "../data/pricing";
+import { getSingle } from "../utils/utils";
+import { PricingPageCentre } from "../components/PricingPageCentre/PricingPageCentre";
 
 export const Pricing = () => {
-  return (
-    <>
-      <p>prices</p>
-      <p>100</p>
-      <p>200</p>
-      <p>200</p>
-      <p>200</p>
-    </>
+  const [pricingPhoto, setPricingPhoto] = useState("");
+  const [prices, setPrices] = useState([]);
+
+  const fetchPricingPhoto = async () => {
+    const data = await getSingle("CCFWTMnRWsE");
+    const photo = data.urls.full;
+    setPricingPhoto(photo);
+  };
+
+  useEffect(() => {
+    fetchPricingPhoto();
+    setPrices(pricing);
+  }, []);
+
+  return pricingPhoto ? (
+    <PricingPageCentre imagePricing={pricingPhoto} prices={prices} />
+  ) : (
+    <p>Loading</p>
   );
 };
