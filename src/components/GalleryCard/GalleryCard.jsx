@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./GalleryCard.css";
 
 export const GalleryCard = (props) => {
@@ -9,6 +10,7 @@ export const GalleryCard = (props) => {
           href=""
           src={props.photo}
           alt={props.alt_description}
+          onClick={props.clickPhoto}
         ></img>
       </div>
     </div>
