@@ -1,6 +1,6 @@
 import React from "react";
-import aboutData from "../data/about.json";
+import { AboutPageCentre } from "../components/AboutPageCentre/AboutPageCentre";
 
 export const AboutUs = () => {
-  return <></>;
+  return <AboutPageCentre />;
 };

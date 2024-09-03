@@ -9,7 +9,7 @@ export const GalleryCard = (props) => {
           className="galleryImage"
           href=""
           src={props.photo}
-          alt={props.alt_description}
+          // alt={props.alt_description}
           onClick={props.clickPhoto}
         ></img>
       </div>

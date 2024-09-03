@@ -8,7 +8,7 @@ export const Pricing = () => {
   const [prices, setPrices] = useState([]);
 
   const fetchPricingPhoto = async () => {
-    const data = await getSingle("CCFWTMnRWsE");
+    const data = await getSingle("HxHdSIesKg4");
     const photo = data.urls.full;
     setPricingPhoto(photo);
   };
