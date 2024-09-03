@@ -11,7 +11,7 @@ export const PricingPageCentre = (props) => {
         <img
           className="pricingBackgroundPhoto"
           href=""
-          src={props.imagePricing}
+          style={{ backgroundImage: `url(${props.imagePricing})` }}
         ></img>
       </div>
 

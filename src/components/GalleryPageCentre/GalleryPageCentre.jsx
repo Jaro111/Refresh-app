@@ -32,13 +32,13 @@ export const GalleryPageCentre = () => {
   const nextClick = () => {
     if (galleryLength > 0) {
       setSkip(skip + 8);
-    } else {
-      setSkip(skip);
+      window.scrollTo(0, 0);
     }
     console.log(galleryLength);
   };
   const prevClick = () => {
     if (skip > 0) setSkip(skip - 8);
+    window.scrollTo(0, 0);
   };
 
   useEffect(() => {

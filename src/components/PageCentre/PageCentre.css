@@ -4,18 +4,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .logoContainer {
+  top: 10%;
   width: fit-content;
   height: fit-content;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  left: 0;
-  right: 0;
   text-align: center;
 }
 
@@ -47,6 +46,28 @@
 }
 
 .mainImage {
-  height: 100%;
   width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .PageCentre {
+    background-color: white;
+  }
+
+  .logoHome {
+    border-radius: 250px;
+    width: 350x;
+    height: 350px;
+    padding: 0px;
+    opacity: 0.8;
+  }
+
+  .mainImage {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+  }
 }

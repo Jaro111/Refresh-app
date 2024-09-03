@@ -1,5 +1,4 @@
 .galleryPageCentre {
-  border: 1px solid yellow;
   position: absolute;
   height: max-content;
   width: 98%;
@@ -15,6 +14,7 @@
 
 .galleryContainer {
   width: 100%;
+  height: fit-content;
   height: max-content;
   display: flex;
   flex-wrap: wrap;
@@ -24,6 +24,7 @@
 }
 
 .nextPrevContainer {
+  margin-top: 40px;
   width: 300px;
   bottom: 5px;
   height: 5%;
@@ -35,11 +36,25 @@
 
 .nextPrevContentContainer {
   width: 20px;
+  height: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
   color: white;
+}
+
+.nextBtn,
+.prevBtn {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.nextBtn:hover,
+.prevBtn:hover {
+  background-color: white;
+  color: black;
 }
 
 .nextPrevContent {
