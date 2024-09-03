@@ -21,7 +21,11 @@ export const AboutPageCentre = () => {
   return (
     <div className="aboutUsPageCentre">
       {aboutPhoto ? (
-        <img href="" className="aboutPhoto" src={aboutPhoto}></img>
+        <img
+          href=""
+          className="aboutPhoto"
+          style={{ backgroundImage: `url(${aboutPhoto})` }}
+        ></img>
       ) : null}
 
       <div className="AboutUsContainer">

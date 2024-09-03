@@ -9,7 +9,7 @@ export const PageCentre = () => {
   const [mainPhoto, setMainPhoto] = useState("");
   //
   const fetchPhotos = async () => {
-    const photo = await getSingle("LiUUlnsqwxY");
+    const photo = await getSingle("EX1uC6ZVu7w");
     console.log(photo.urls);
     setMainPhoto(photo.urls.full);
   };
@@ -26,7 +26,11 @@ export const PageCentre = () => {
       <div className="mianImagesSpaceContainer">
         {mainPhoto ? (
           <div className="mainImageContainer">
-            <img className="mainImage" href="" src={mainPhoto}></img>
+            <img
+              style={{ backgroundImage: `url(${mainPhoto})` }}
+              className="mainImage"
+              href=""
+            ></img>
           </div>
         ) : (
           <p>Loading</p>
