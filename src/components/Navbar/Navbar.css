@@ -27,3 +27,7 @@
   text-decoration: none;
   color: rgb(134, 73, 85);
 }
+
+a.active {
+  display: none;
+}
