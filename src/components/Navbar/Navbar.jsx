@@ -1,26 +1,29 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import "./Navbar.css";
 
 export const Navbar = () => {
+  const location = useLocation();
+  console.log(location);
   return (
     <div className="NavbarSpace">
       <div className="navLinksContainer">
         <NavLink className="navLink" to="/">
-          Home
+          Strona Główna
         </NavLink>
 
         <NavLink className="navLink" to="/gallery">
-          Gallery
+          Galeria
         </NavLink>
 
         <NavLink className="navLink" to="/aboutUs">
-          About Us
+          O nas
         </NavLink>
 
         <NavLink className="navLink" to="/pricing">
-          Pricing
+          Cennik
         </NavLink>
       </div>
     </div>

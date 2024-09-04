@@ -2,7 +2,7 @@
   width: 400px;
   height: 350px;
   display: flex;
-  padding: 5px 20px 20px 20px;
+  padding: 5px 10px 10px 10px;
 }
 
 .galleryImageContainer {
@@ -18,4 +18,25 @@
   max-height: 100%;
   display: block;
   border: 2px solid white;
+}
+
+@media only screen and (max-width: 846px) {
+  .GalleryCard {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .GalleryCard {
+    width: 330px;
+    height: 280x;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .GalleryCard {
+    width: 150px;
+    height: 175px;
+  }
 }
