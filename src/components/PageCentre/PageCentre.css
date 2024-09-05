@@ -63,7 +63,7 @@
 }
 
 .bottomNoteContentClick {
-  font-size: 20px;
+  font-size: 13px;
   margin-left: 0 0 0 5px;
   padding: 0 0 0 5px;
   text-decoration: underline;
@@ -79,7 +79,7 @@
   display: none;
 }
 .bottomNoteContentLink {
-  font-size: 20px;
+  font-size: 13px;
   margin-left: 0 0 0 5px;
   padding: 0 0 0 5px;
 }
@@ -88,11 +88,11 @@
   /* .PageCentre {
   } */
   .bottomNoteContentClick {
-    font-size: 15px;
+    font-size: 11px;
   }
 
   .bottomNoteContentLink {
-    font-size: 15px;
+    font-size: 11px;
   }
   .logoHome {
     border-radius: 250px;
@@ -109,11 +109,11 @@
 
 @media only screen and (max-width: 800px) {
   .bottomNoteContentClick {
-    font-size: 11px;
+    font-size: 9px;
   }
 
   .bottomNoteContentLink {
-    font-size: 11px;
+    font-size: 9px;
     margin: 0;
   }
   .logoHome {
