@@ -24,7 +24,7 @@ export const Footer = () => {
         </div>
         <div className="callIconContainer">
           <IoCallSharp className="callIcon" />
-          <p className="callContent">+48 0913210597</p>
+          <p className="callContent">+48 508244541</p>
         </div>
       </div>
     </div>
