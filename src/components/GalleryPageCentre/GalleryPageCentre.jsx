@@ -20,12 +20,10 @@ export const GalleryPageCentre = () => {
     const gallery = await getGallery(limit, skip);
     setGalleryPhotos(gallery);
     setGalleryLength(gallery.length);
-    console.log("length", galleryLength);
   };
 
   const clickPhoto = (item) => {
     setIsModalGalleryVisible(true);
-    console.log(isModalGalleryVisible);
     setModalFullPhoto(item.url);
   };
 
@@ -34,7 +32,6 @@ export const GalleryPageCentre = () => {
       setSkip(skip + 8);
       window.scrollTo(0, 0);
     }
-    console.log(galleryLength);
   };
   const prevClick = () => {
     if (skip > 0) setSkip(skip - 8);

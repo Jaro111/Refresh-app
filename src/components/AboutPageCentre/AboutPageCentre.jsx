@@ -10,7 +10,6 @@ export const AboutPageCentre = () => {
   //
   const fetchPhotos = async () => {
     const photo = await getSingle("Xf7o2W7qgP0");
-    console.log(photo);
     setAboutPhoto(photo.urls.full);
   };
 

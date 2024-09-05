@@ -63,7 +63,8 @@
 }
 
 .bottomNoteContentClick {
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: 700;
   margin-left: 0 0 0 5px;
   padding: 0 0 0 5px;
   text-decoration: underline;
@@ -79,7 +80,7 @@
   display: none;
 }
 .bottomNoteContentLink {
-  font-size: 13px;
+  font-size: 15px;
   margin-left: 0 0 0 5px;
   padding: 0 0 0 5px;
 }

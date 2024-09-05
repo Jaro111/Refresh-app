@@ -11,7 +11,6 @@ export const PageCentre = () => {
   //
   const fetchPhotos = async () => {
     const photo = await getSingle("EX1uC6ZVu7w");
-    console.log(photo.urls);
     setMainPhoto(photo.urls.regular);
   };
 

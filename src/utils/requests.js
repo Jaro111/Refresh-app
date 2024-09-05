@@ -15,6 +15,5 @@ export const getGallery = async (limit, skip) => {
 
   const response = await photos.json();
   const gallery = await response.myImages;
-  console.log(gallery);
   return gallery;
 };
