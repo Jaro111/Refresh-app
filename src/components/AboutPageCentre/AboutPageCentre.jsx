@@ -33,10 +33,10 @@ export const AboutPageCentre = () => {
           <p className="aboutTitleContent">{aboutData.title}</p>
           <p className="aboutContentContent">{aboutData.content}</p>
           <p className="aboutRegardsContent">{aboutData.seeYou}</p>
-          <p className="aboutRegardsContent">{aboutData.regards}</p>
           <p className="aboutRegardsContent">{aboutData.salonName}</p>
-          <p className="aboutRegardsContent">{aboutData.owner}</p>
-          <p className="aboutRegardsContent">{aboutData.name}</p>
+          <p className="aboutRegardsContent">{aboutData.ulica}</p>
+          <p className="aboutRegardsContent">{aboutData.miasto}</p>
+          <p className="aboutRegardsContent">{aboutData.wojewodztwo}</p>
         </div>
       </div>
     </div>

@@ -2,8 +2,9 @@
   position: fixed;
   top: 2%;
   left: 5%;
-  border: 2px solid yellow;
-  background-color: rgba(0, 0, 0, 0.829);
+  border: 2px solid rgb(134, 73, 85);
+  border-radius: 20px;
+  background-color: rgba(74, 21, 78, 0.705);
   width: 90%;
   height: 90%;
   display: flex;

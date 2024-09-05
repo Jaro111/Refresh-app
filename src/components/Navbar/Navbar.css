@@ -1,33 +1,23 @@
 .NavbarSpace {
   width: 95%;
   height: 40px;
-  border-bottom: 1px solid rgb(134, 73, 85);
+  border-bottom: 1px solid rgb(153, 86, 153);
   font-size: 25px;
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 900;
-}
-
-.navLinksContainer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  width: 500px;
-  height: 100%;
+  flex-direction: row;
 }
 
-.navbarLogo {
-  width: 50px;
-  height: 50px;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-.navLink {
-  text-decoration: none;
-  color: rgb(134, 73, 85);
-}
-
-a.active {
+.NavLinksMedia {
   display: none;
+}
+
+@media only screen and (max-width: 458px) {
+  .NavbarSpace {
+    justify-content: center;
+  }
 }

@@ -11,10 +11,10 @@
 }
 
 .footerIcons {
-  width: 96%;
+  width: 98%;
   height: 96%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
@@ -22,7 +22,7 @@
 .facebookIconContainer,
 .locationIconContainer,
 .callIconContainer {
-  width: 30%;
+  width: 33%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +42,7 @@
 }
 
 .locationIcon {
-  color: rgb(255, 255, 255);
+  color: rgb(245, 22, 22);
 }
 
 .callIcon {
@@ -56,4 +56,52 @@
   padding: 0;
   color: white;
   color: rgb(15, 250, 15);
+}
+
+@media only screen and (max-width: 706px) {
+  .facebookIcon,
+  .locationIcon,
+  .callIcon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+  }
+  .footerIcons {
+    gap: 3px;
+  }
+  .callContent {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 424px) {
+  .facebookIcon,
+  .locationIcon,
+  .callIcon {
+    width: 25px;
+    height: 25px;
+    display: flex;
+  }
+  .footerIcons {
+    gap: 1px;
+  }
+  .callContent {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 352px) {
+  .facebookIcon,
+  .locationIcon,
+  .callIcon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+  }
+  .footerIcons {
+    gap: 1px;
+  }
+  .callContent {
+    font-size: 11px;
+  }
 }
