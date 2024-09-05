@@ -7,11 +7,16 @@ import logo from "../../assets/glow_logo.jpg";
 export const PageCentre = () => {
   //
   const [mainPhoto, setMainPhoto] = useState("");
+  const [isDesignerVisible, setIsDesignerVisible] = useState(false);
   //
   const fetchPhotos = async () => {
     const photo = await getSingle("EX1uC6ZVu7w");
     console.log(photo.urls);
-    setMainPhoto(photo.urls.full);
+    setMainPhoto(photo.urls.regular);
+  };
+
+  const showDesigner = () => {
+    setIsDesignerVisible(true);
   };
 
   useEffect(() => {
@@ -35,6 +40,30 @@ export const PageCentre = () => {
         ) : (
           <p>Loading</p>
         )}
+        <div
+          className="bottomNoteContainer"
+          style={{
+            bottom: isDesignerVisible ? "60px" : "50px",
+          }}
+        >
+          <p
+            style={{ display: isDesignerVisible ? "none" : "block" }}
+            onClick={showDesigner}
+            className="bottomNoteContentClick"
+          >
+            {" "}
+            Created by
+          </p>
+          <div
+            className="bottomNoteContentLinkContainer"
+            style={{
+              display: isDesignerVisible ? "block" : "none",
+            }}
+          >
+            <p className="bottomNoteContentLink">https://github.com/Jaro111</p>
+            <p className="bottomNoteContentLink">jarokark@protonmail.com</p>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -52,16 +52,74 @@
   background-position: center;
 }
 
-@media only screen and (max-width: 600px) {
-  .PageCentre {
+.bottomNoteContainer {
+  height: fit-content;
+  margin-right: 5px;
+  bottom: 50px;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  position: absolute;
+}
+
+.bottomNoteContentClick {
+  font-size: 20px;
+  margin-left: 0 0 0 5px;
+  padding: 0 0 0 5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.bottomNoteContentLinkContainer {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+.bottomNoteContentLink {
+  font-size: 20px;
+  margin-left: 0 0 0 5px;
+  padding: 0 0 0 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  /* .PageCentre {
+  } */
+  .bottomNoteContentClick {
+    font-size: 15px;
   }
 
+  .bottomNoteContentLink {
+    font-size: 15px;
+  }
   .logoHome {
     border-radius: 250px;
-    width: 350x;
-    height: 350px;
-    padding: 0px;
-    opacity: 0.8;
+    width: 400x;
+    height: 400px;
+  }
+
+  .mainImage {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .bottomNoteContentClick {
+    font-size: 11px;
+  }
+
+  .bottomNoteContentLink {
+    font-size: 11px;
+    margin: 0;
+  }
+  .logoHome {
+    border-radius: 250px;
+    width: 330x;
+    height: 330px;
   }
 
   .mainImage {

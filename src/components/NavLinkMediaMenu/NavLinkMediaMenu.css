@@ -1,0 +1,18 @@
+.mediaMenuContainer {
+  position: absolute;
+  background-color: rgba(46, 23, 48, 0.952);
+  border: 1px solid white;
+  width: 100vw;
+  height: 400px;
+  z-index: 800;
+  top: 40px;
+}
+
+.navLinkMediaContainer {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  align-items: center;
+  flex-direction: column;
+}

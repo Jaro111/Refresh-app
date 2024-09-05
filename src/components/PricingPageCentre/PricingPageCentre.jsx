@@ -16,7 +16,6 @@ export const PricingPageCentre = (props) => {
       </div>
 
       <div className="menuWrapper">
-        {}
         {pricing.map((item, index) => {
           return (
             <div className="menuPricingContainer" key={index}>

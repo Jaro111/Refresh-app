@@ -1,0 +1,42 @@
+.navLinksContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 500px;
+  height: 100%;
+}
+
+.navbarLogo {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.navLink {
+  text-decoration: none;
+  color: rgb(153, 86, 153);
+}
+
+.navLink:hover {
+  color: rgb(185, 112, 125);
+}
+
+.navLink:active {
+  color: pink;
+}
+
+a.active {
+  display: none;
+}
+
+@media only screen and (max-width: 458px) {
+  .navLinksContainer {
+    display: none;
+  }
+
+  .navLink {
+    text-decoration: none;
+    color: rgb(192, 122, 136);
+  }
+}

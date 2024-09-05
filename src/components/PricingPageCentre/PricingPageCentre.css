@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap");
+
 .pricingPageCentre {
   position: relative;
   width: 100%;
@@ -6,6 +8,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-family: "Martian Mono", monospace;
+  font-optical-sizing: auto;
 }
 
 .pricingBackgroundPhotoWrapper {
@@ -24,19 +28,23 @@
 
 /* --------------------------------- Menu Content ------------------------------= */
 .menuWrapper {
+  top: 150px;
   position: absolute;
-  /* border: 1px solid rgb(13, 158, 97); */
-  width: 95%;
-  height: 90%;
+  background-color: rgba(74, 21, 78, 0.705);
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 75%;
+  height: fit-content;
   box-sizing: border-box;
   display: flex;
+  justify-content: center;
 }
 
 .menuPricingContainer {
   width: 100%;
-
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .serviceContainer {
@@ -47,18 +55,49 @@
 }
 
 .categoryContent {
-  font-family: Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .serviceNameContent {
   margin-right: 10px;
-  color: rgb(247, 247, 0);
+  color: white;
   font-size: 16px;
+  font-weight: 400;
 }
 
 .servicePriceContent {
-  color: rgb(247, 247, 0);
-  font-size: 16px;
+  color: white;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 1155px) {
+  .menuWrapper {
+    top: 30px;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1155px) {
+  .menuWrapper {
+    top: 50px;
+    flex-direction: column;
+  }
+
+  .categoryContent {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .serviceNameContent {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .servicePriceContent {
+    font-weight: 200;
+    font-size: 11px;
+  }
 }
