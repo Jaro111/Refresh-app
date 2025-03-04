@@ -18,13 +18,13 @@ export const Footer = () => {
           </a>
         </div>
         <div className="locationIconContainer">
-          <a target="_blank" href="https://maps.app.goo.gl/ZQzstpXX4gWEiBf3A">
+          <a target="_blank" href="https://maps.app.goo.gl">
             <FaLocationDot className="locationIcon" />
           </a>
         </div>
         <div className="callIconContainer">
           <IoCallSharp className="callIcon" />
-          <p className="callContent">+48 508244541</p>
+          <p className="callContent">+48 000000000</p>
         </div>
       </div>
     </div>
